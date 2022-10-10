@@ -15,8 +15,7 @@
     
     if (isset($Users[$_POST["Username"]]) === TRUE && $Users[$_POST["Username"]] === $_POST["Password"])
     {
-        $CurrentUser = $_POST["Username"];
-        echo("Welcome $CurrentUser");
+        header("Location: Home.php");
     } else 
     {
         echo("Fel Användarnamn eller Lösenord.");
