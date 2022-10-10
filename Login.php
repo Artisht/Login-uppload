@@ -12,10 +12,15 @@
     $Users = [ "ADMIN" => "PASS", "Martin" => "martin"];
     ## NOTE:
     ## GÖR så att man kan registera user till en txt och att alla users = txt filen
-    
+    $currentuser = $_POST["Username"];
+
+    session_start();
+    $_SESSION["user"] = $currentuser;
+
+
     if (isset($Users[$_POST["Username"]]) === TRUE && $Users[$_POST["Username"]] === $_POST["Password"])
     {
-        header("Location: Home.php");
+        header("Location: Home.html");
     } else 
     {
         echo("Fel Användarnamn eller Lösenord.");

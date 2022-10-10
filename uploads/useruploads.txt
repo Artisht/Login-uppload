@@ -1,0 +1,2 @@
+ADMIN;uploads/bäst.png
+ADMIN;uploads/duck.jpg
