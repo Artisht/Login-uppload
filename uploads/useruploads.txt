@@ -1,2 +1,3 @@
 ADMIN;uploads/bäst.png
-ADMIN;uploads/duck.jpg
+ADMIN;uploads/font.png
+ADMIN;uploads/face.png
